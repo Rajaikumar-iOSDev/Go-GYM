@@ -1,6 +1,6 @@
 # Go GYM
 
-A simple Go-based gym membership management API using PostgreSQL.
+A simple Go-based gym membership management API using Supabase.
 
 ## Features
 
