@@ -8,7 +8,7 @@ import (
 )
 
 func NewSupabaseDB() *sql.DB {
-    connStr := os.Getenv("postgresql://postgres:Ziffity@123@db.dzomirjppizanvfqprni.supabase.co:5432/postgres")
+    connStr := "postgresql://postgres:Ziffity@123@db.dzomirjppizanvfqprni.supabase.co:5432/postgres"
     if connStr == "" {
         log.Fatal("SUPABASE_DB_URL environment variable is not set")
     }
