@@ -16,7 +16,7 @@ func main() {
     if connStr == "" {
         connStr = "host=localhost port=5432 user=postgres password=postgres dbname=gym sslmode=disable"
     }
-    database := db.NewPostgresDB(connStr)
+    database := db.NewSupabaseDB(connStr)
     memberHandler := &member.Handler{DB: database}
 
     r := mux.NewRouter()
